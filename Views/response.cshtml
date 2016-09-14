@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Allergiess response</title>
+ </head>
+ <body>
+   <h1>Yours score @Model.GetScore()</h1>
+   <h3>Your Allergies are:</h3>
+   @foreach (string item in @Model.GetAllergyList() )
+   {
+     <li>@item</li>
+   }
+
+   <a href="/">Back</a>
+ </body>
+</html>
